@@ -64,7 +64,7 @@ textarea {
 .container {
     width: 320px;
     margin: 0 auto;
-    padding: 0 16;
+    padding: 0 16px;
 }
 @media screen and (min-width: 768px) {
     .container {
@@ -303,6 +303,7 @@ textarea {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 20px;
+    font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
@@ -338,19 +339,16 @@ textarea {
 /* #region section-1 */
 .hero {
     background-color: #2e2f42;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center;
     text-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 96px;
-    width: 320px;
-    height: 432px;
+    align-items: center; */
+    /* margin-left: auto;
+    margin-right: auto; */
     padding: 72px 0;
     background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("/images/hero-background/hero-mobile.jpg");
+    url("../images/hero-background/hero-mobile.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -404,18 +402,27 @@ textarea {
     .hero {
         background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("/images/hero-background/hero-mobile@2x.jpg" );}
+        url("../images/hero-background/hero-mobile@2x.jpg" );}
     
 }
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url("./images/hero-background/hero-tablet.jpg");
+        background-image: url("../images/hero-background/hero-tablet.jpg");
+        padding: 112px 0;
+    }
+    .hero-container {
+        gap: 36px;
+    }
+    .hero-text {
+        font-size: 48px;
+        max-width: 496px;
+        max-height: 160px;  
     }
     @media (min-resolution: 2x) {
     .hero {
         background-image:
         linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url("/images/hero-background/hero-tablet@2x.jpg" );
+        url("../images/hero-background/hero-tablet@2x.jpg" );
     }
         
     }
@@ -431,7 +438,7 @@ textarea {
         .hero {
             background-image:
             linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url("/images/hero-background/hero-desktop@2x.jpg" );
+            url("../images/hero-background/hero-desktop@2x.jpg" );
         }
     }
     .hero {
@@ -440,8 +447,9 @@ textarea {
         max-height: 600px;
         width: 100%;
         height: 100%;
+        margin: 0 auto;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url("/images/hero-background/hero-desktop.jpg");
+            url("../images/hero-background/hero-desktop.jpg");
     }
 
     .hero-text {
@@ -457,11 +465,10 @@ textarea {
 /* #region section-2 */
 .benefits-container {
     padding: 0 16px;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 96px;
+    /* align-items: center; */
 }
 .benefits-container-svg {
     display: none;
@@ -470,9 +477,7 @@ textarea {
     display: none;
 }
 .benefits {
-    margin-left: auto;
-    margin-right: auto;
-    width: 320px;
+   padding: 96px 0;
 }
 .benefits-ul {
     display: flex;
@@ -509,7 +514,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
     .benefits {
-        width: 768px;
+        /* width: 768px; */
     }
     .benefits-ul {
         gap: 72px 24px;
@@ -552,7 +557,7 @@ textarea {
     } 
 
     .benefits {
-        width: 1129px;
+        /* width: 1129px; */
     }
     .benefits-ul {
         gap: 24px;
@@ -571,7 +576,7 @@ textarea {
 /* #region section-3 */
 .team {
     background-color: #F4F4FD;
-    padding: 96px 28px;
+    padding: 96px 0;
     display: flex;
     align-items: center;
 }
@@ -604,7 +609,6 @@ textarea {
 }
 .members {
     background-color: #FFFFFF;
-    height: 428px;
     width: 264px;
     justify-content: center;
     gap: 24px;
@@ -679,7 +683,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
     .members-ul {
-        gap: 24px;
+        gap: 64px 24px;
     }
 
 
@@ -694,7 +698,7 @@ textarea {
 /* #endregion section-3 */
 /* #region section-4 */
 .portfolio {
-    padding: 96px 16px;
+    padding: 96px 0;
     display: flex;
     align-items: center;
     flex-shrink: 0;
